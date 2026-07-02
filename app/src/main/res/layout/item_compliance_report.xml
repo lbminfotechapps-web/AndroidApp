@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:strokeWidth="0dp"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Left Icon -->
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_circle_light"
+                android:padding="10dp"
+                android:src="@drawable/capsule" />
+
+            <!-- Time Badge -->
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgIcon"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/bg_time_chip"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="09:00 AM"
+                android:textColor="#00796B"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <!-- Medicine Name -->
+            <TextView
+                android:id="@+id/tvMedicineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTime"
+                android:layout_toEndOf="@id/imgIcon"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:text="RESPIMEGA LP CAP"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvMedicineName"
+                android:layout_toEndOf="@id/imgIcon"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                android:text="1 Capsule • Before Breakfast"
+                android:textColor="#757575"
+                android:textSize="12sp" />
+
+            <!-- Schedule Label -->
+            <TextView
+                android:id="@+id/tvSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="● SCHEDULE"
+                android:textColor="#4CAF50"
+                android:textSize="12sp" />
+
+            <!-- Check Button -->
+            <ImageView
+                android:id="@+id/imgCheck"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/tvSchedule"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_circle_green"
+                android:padding="2dp"
+                android:src="@drawable/check"
+                android:tint="@android:color/white" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

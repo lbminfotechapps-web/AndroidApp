@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="20dp"
+
+    app:cardCornerRadius="18dp"
+    app:cardElevation="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <!-- Dialog Header -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:gravity="center_vertical"
+
+            android:layout_marginBottom="15dp">
+
+
+            <TextView
+
+                android:id="@+id/tvDialogTitle"
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:text="Add Sugar Details"
+
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/black"/>
+
+
+
+            <ImageView
+
+                android:id="@+id/ivClose"
+
+                android:layout_width="35dp"
+
+                android:layout_height="35dp"
+
+                android:padding="6dp"
+
+                android:src="@drawable/closes"
+
+                android:contentDescription="Close"
+
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+        </LinearLayout>
+        <!-- Sugar Type Tabs -->
+
+        <com.google.android.material.tabs.TabLayout
+
+            android:id="@+id/tabSugarType"
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:background="@drawable/bg_tab"
+
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+
+            app:tabIndicatorColor="@color/color_blue"
+            app:tabSelectedTextColor="@color/color_blue"
+            app:tabTextColor="#777">
+
+
+            <com.google.android.material.tabs.TabItem
+
+                android:text="Fasting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.tabs.TabItem
+
+                android:text="After Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.tabs.TabItem
+
+                android:text="Random"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+
+        <!-- Sugar Value -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+
+            android:gravity="center"
+
+            android:orientation="vertical"
+
+            android:layout_marginTop="10dp">
+
+
+            <EditText
+
+                android:id="@+id/etSugarValue"
+
+                android:layout_width="120dp"
+
+                android:layout_height="70dp"
+
+                android:gravity="center"
+
+                android:textSize="28sp"
+
+                android:textColor="@color/black"
+
+                android:inputType="numberDecimal"
+
+                android:background="@android:color/transparent"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:text="mg/dL"
+
+            android:gravity="right"
+
+            android:textSize="14sp"
+
+            android:textColor="#777"/>
+
+
+
+        <!-- Info -->
+
+        <TextView
+
+            android:id="@+id/tvSugarInfo"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="40dp"
+
+            android:gravity="center_vertical"
+
+            android:padding="8dp"
+
+            android:text="ⓘ Fasting: Requires at least 8 hours of fast"
+
+            android:textSize="12sp"
+
+            android:textColor="#B06A00"
+
+            android:background="@drawable/bg_info"
+
+            android:layout_marginTop="15dp"/>
+
+
+
+        <!-- Date Time -->
+
+
+        <TextView
+
+            android:id="@+id/tvDateTime"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="45dp"
+
+            android:layout_gravity="center"
+
+            android:gravity="center"
+
+            android:paddingLeft="15dp"
+
+            android:paddingRight="15dp"
+
+            android:text="📅 Today | 03:57 pm"
+
+            android:textColor="@color/color_blue"
+
+            android:textStyle="bold"
+
+            android:textSize="16sp"
+
+            android:background="@drawable/bg_date_button"
+
+            android:layout_marginTop="15dp"/>
+
+
+        <!-- Save -->
+
+        <Button
+
+            android:id="@+id/btnSave"
+            app:backgroundTint="@color/color_blue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Save"
+            android:icon="@drawable/add"
+
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

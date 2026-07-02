@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvReportTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_10sp"
+        android:text=""
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_22sp"
+        android:textStyle="bold" />
+
+    <!-- Header -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+
+        <TextView
+
+            android:id="@+id/tvToday"
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:text="Today"
+
+            android:textColor="@color/black"
+
+            android:textSize="22sp"
+
+            android:textStyle="bold" />
+
+
+        <ImageView
+
+            android:id="@+id/imgCalendar"
+            android:layout_width="28dp"
+
+            android:layout_height="28dp"
+
+            android:src="@drawable/calendar" />
+
+
+    </LinearLayout>
+
+
+    <!-- Month Date Horizontal -->
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/rvDate"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="75dp"
+
+        android:layout_marginTop="18dp"
+
+        android:overScrollMode="never" />
+
+
+
+    <!-- Medicine List -->
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+
+        android:id="@+id/swipeRefreshLayout"
+
+
+        android:layout_width="match_parent"
+
+
+        android:layout_height="0dp"
+
+
+        android:layout_marginTop="15dp"
+
+
+        android:layout_weight="1">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rvCompliance"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent" />
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <!-- Floating Button -->
+
+
+</LinearLayout>

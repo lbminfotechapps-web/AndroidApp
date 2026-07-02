@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Ranju Gupta at 26/05/22, 5:47 PM.
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/drawer_selected_bg_color" android:state_checked="true" />
+    <item android:drawable="@android:color/transparent" />
+</selector>

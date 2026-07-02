@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="10dp"
+
+    app:cardCornerRadius="18dp"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- Header -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical">
+
+
+            <ImageView
+
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+
+                android:src="@drawable/bp_icon"
+
+                android:padding="8dp"
+
+                android:background="@drawable/circle_bg"/>
+
+
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:layout_marginStart="12dp"
+
+                android:orientation="vertical">
+
+
+
+                <TextView
+
+                    android:id="@+id/tvBPTitle"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="BLOOD PRESSURE"
+
+                    android:textSize="17sp"
+
+                    android:textStyle="bold"
+
+                    android:textColor="@color/color_blue"/>
+
+
+
+                <TextView
+
+                    android:id="@+id/tvDateTime"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="24-06/2026 | 05:42 PM"
+
+                    android:textSize="13sp"
+
+                    android:textColor="#666"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <!-- BP Values -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            android:padding="12dp"
+
+            android:background="#E8F5E9"
+
+            android:orientation="horizontal"
+
+            android:weightSum="3">
+
+
+
+            <TextView
+
+                android:id="@+id/tvSys"
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:text="SYS\n30"
+
+                android:textStyle="bold"
+
+                android:textSize="16sp"
+
+                android:textColor="#2E7D32"/>
+
+
+
+            <TextView
+
+                android:id="@+id/tvDia"
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:text="DIA\n50"
+
+                android:textStyle="bold"
+
+                android:textSize="16sp"
+
+                android:textColor="#2E7D32"/>
+
+
+
+            <TextView
+
+                android:id="@+id/tvPulse"
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:text="PULSE\n35"
+
+                android:textStyle="bold"
+
+                android:textSize="16sp"
+
+                android:textColor="#2E7D32"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

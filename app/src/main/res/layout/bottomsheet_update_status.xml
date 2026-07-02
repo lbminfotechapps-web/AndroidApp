@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+
+    android:background="@drawable/bg_bottom_sheet"
+
+    android:padding="20dp">
+
+
+    <TextView
+
+        android:id="@+id/tvTitle"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Update Status"
+
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+
+        android:textColor="@color/black"/>
+
+
+
+    <View
+
+        android:layout_width="match_parent"
+
+        android:layout_height="1dp"
+
+        android:background="#DDDDDD"
+
+        android:layout_marginTop="15dp"
+
+        android:layout_marginBottom="15dp"/>
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+
+
+        <!-- Taken -->
+
+        <LinearLayout
+
+            android:id="@+id/llTaken"
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="55dp"
+
+                android:layout_height="55dp"
+
+                android:padding="10dp"
+
+                android:src="@drawable/check"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+
+                android:text="Taken"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <!-- Skip -->
+
+
+        <LinearLayout
+
+            android:id="@+id/llSkip"
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+
+            <ImageView
+
+                android:layout_width="55dp"
+
+                android:layout_height="42dp"
+
+                android:padding="10dp"
+
+                android:src="@drawable/closes" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+
+
+
+        <!-- No status -->
+
+
+        <LinearLayout
+
+            android:id="@+id/llNoStatus"
+
+            android:layout_width="0dp"
+            android:visibility="gone"
+
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+
+            <ImageView
+
+                android:layout_width="55dp"
+
+                android:layout_height="42dp"
+
+                android:padding="10dp"
+
+                android:src="@drawable/que" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No status"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

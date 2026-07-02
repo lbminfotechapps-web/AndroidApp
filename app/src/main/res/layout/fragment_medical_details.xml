@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+
+    tools:context=".ui.fragment.compliancereport.CompliancereportFragment">
+
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+
+    android:orientation="horizontal">
+
+    <TextView
+
+        android:id="@+id/tvReportTitle"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+
+        android:text="Medical Report"
+        android:layout_centerVertical="true"
+        android:textAllCaps="true"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/black"
+
+        android:textSize="22sp"
+
+        android:textStyle="bold"/>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+
+        android:id="@+id/fabAddMedical"
+
+        android:layout_width="100dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentEnd="true"
+
+        android:text="Add Details"
+
+        android:textColor="@color/white"
+
+        android:textSize="14sp"
+
+        android:icon="@drawable/add"
+
+        app:iconTint="@color/white"
+
+        app:backgroundTint="@color/color_blue"
+
+        app:elevation="8dp"/>
+
+
+</RelativeLayout>
+    <!-- TITLE -->
+
+
+
+
+
+
+
+
+
+    <!-- DATE FILTER -->
+
+
+    <com.google.android.material.card.MaterialCardView
+
+
+        android:layout_width="match_parent"
+
+
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginHorizontal="8dp"
+
+
+        app:cardCornerRadius="12dp"
+
+
+        app:cardElevation="3dp">
+
+
+
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+
+
+            android:layout_height="wrap_content"
+
+
+            android:orientation="horizontal"
+
+
+            android:gravity="center_vertical"
+
+
+            android:padding="10dp">
+
+
+
+
+
+            <!-- FROM DATE -->
+
+
+            <LinearLayout
+
+                android:id="@+id/layoutFromDate"
+
+                android:layout_width="0dp"
+
+                android:layout_height="45dp"
+
+                android:layout_weight="1"
+
+                android:gravity="center_vertical"
+
+                android:paddingHorizontal="10dp"
+
+                android:background="@drawable/bg_bp_value">
+
+
+
+                <ImageView
+
+                    android:layout_width="20dp"
+
+                    android:layout_height="20dp"
+
+                    android:src="@drawable/calendar"
+
+                    app:tint="@color/color_blue"/>
+
+
+
+
+                <TextView
+
+                    android:id="@+id/tvFromDate"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="6dp"
+
+                    android:text="From Date"
+
+                    android:textSize="13sp"
+
+                    android:textColor="#555"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <!-- TO DATE -->
+
+
+            <LinearLayout
+
+
+                android:id="@+id/layoutToDate"
+
+
+                android:layout_width="0dp"
+
+
+                android:layout_height="45dp"
+
+
+                android:layout_weight="1"
+
+
+                android:layout_marginStart="8dp"
+
+
+                android:gravity="center_vertical"
+
+
+                android:paddingHorizontal="10dp"
+
+
+                android:background="@drawable/bg_bp_value">
+
+
+
+                <ImageView
+
+
+                    android:layout_width="20dp"
+
+
+                    android:layout_height="20dp"
+
+
+                    android:src="@drawable/calendar"
+
+
+                    app:tint="@color/color_blue"/>
+
+
+
+                <TextView
+
+
+                    android:id="@+id/tvToDate"
+
+
+                    android:layout_width="wrap_content"
+
+
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginStart="6dp"
+
+
+                    android:text="To Date"
+
+
+                    android:textSize="13sp"
+
+
+                    android:textColor="#555"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <!-- SEARCH -->
+
+
+
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+
+    <!-- TAB -->
+
+
+    <com.google.android.material.tabs.TabLayout
+
+
+        android:id="@+id/tabMedical"
+
+
+        android:layout_width="match_parent"
+
+
+        android:layout_height="wrap_content"
+
+
+        android:layout_margin="8dp"
+
+
+        app:tabMode="fixed"
+
+
+        app:tabGravity="fill"
+
+
+        app:tabIndicatorColor="@color/color_blue"
+
+
+        app:tabSelectedTextColor="@color/color_blue"
+
+
+        app:tabTextColor="@color/black">
+
+
+
+
+
+        <com.google.android.material.tabs.TabItem
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Sugar"/>
+
+
+
+        <com.google.android.material.tabs.TabItem
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="BP"/>
+
+
+
+        <com.google.android.material.tabs.TabItem
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Weight"/>
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+
+
+
+
+
+    <!-- EMPTY RECORD -->
+
+
+
+
+
+
+
+
+
+
+    <!-- RECYCLER + FAB -->
+
+
+    <!-- RECYCLER + FAB -->
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+
+        android:layout_weight="1">
+
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+            android:id="@+id/swipeRefreshLayout"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/rvCompliance"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:padding="8dp"
+
+                android:clipToPadding="false"
+
+                android:paddingBottom="80dp"/>
+
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

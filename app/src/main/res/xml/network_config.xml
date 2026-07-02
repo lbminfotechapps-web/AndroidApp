@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">lbmsoft.in</domain>
+        <domain includeSubdomains="true">lbminfotech.in</domain>
+        <domain includeSubdomains="true">lbmsites.com</domain>
+        <domain includeSubdomains="true">lbmagrocrm.com</domain>
+        <domain includeSubdomains="true">lbmcrm.com</domain>
+        <domain includeSubdomains="true">192.168.1.254</domain>
+        <domain includeSubdomains="true">192.168.1.253:85</domain>
+        <domain includeSubdomains="true">192.168.1.253</domain>
+        <domain includeSubdomains="true">businessplus.co.in</domain>
+        <domain includeSubdomains="true">img.youtube.com</domain>
+        <domain includeSubdomains="true">agrosalescrm.com</domain>
+        <domain includeSubdomains="true">agroaicrm.com</domain>
+        <domain includeSubdomains="true">shivshakti.lbmapps.in</domain>
+        <domain includeSubdomains="true">lbmapps.in</domain>
+        <domain includeSubdomains="true">dvijaypharma.com</domain>
+        <domain includeSubdomains="true">https://dvijaypharma.com</domain>
+
+
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,163 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home"
+    >
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login" />
+
+
+    <fragment
+        android:id="@+id/nav_full_screen_image"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.FragmentFullScreenViewImage"
+        android:label="Full Screen Image"
+        tools:layout="@layout/fragment_fragment_full_screen_view_image" />
+    <fragment
+        android:id="@+id/nav_signature"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.signature.FragmentSignature"
+        android:label="Signature"
+        tools:layout="@layout/xml_canvas" />
+    <fragment
+        android:id="@+id/nav_otp"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.otp.VerifyOtpFragment"
+        android:label="OTP"
+        tools:layout="@layout/fragment_otp" />
+    <fragment
+        android:id="@+id/nav_medicine"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.medicine_schedule.MedicineScheduleFragment"
+        android:label="Medicine Schedule"
+        tools:layout="@layout/fragment_medicine_schedule" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_reminder"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.reminder.ReminderFragment"
+        android:label="Reminder"
+        tools:layout="@layout/fragment_reminder" />
+    <fragment
+        android:id="@+id/nav_reminder_new"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.reminder_new.ReminderNewFragment"
+        android:label="Reminder New"
+        tools:layout="@layout/fragment_reminder_new" />
+    <fragment
+        android:id="@+id/nav_set_reminder"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.set_reminder.SetReminderFragment"
+        android:label="Set Reminder"
+        tools:layout="@layout/layout_set_reminder" />
+
+    <fragment
+        android:id="@+id/nav_set_compliance"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.compliancereport.CompliancereportFragment"
+        android:label="Compliance Report"
+        tools:layout="@layout/fragment_compliancereport" />
+
+    <fragment
+        android:id="@+id/nav_set_pill_report"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.pillReminderreport.PillReminderReportFragment"
+        android:label="Pill Reminder Report"
+        tools:layout="@layout/fragment_pill_reminder_report" />
+
+    <fragment
+        android:id="@+id/nav_set_gallery"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.gallery.GalleryFragment"
+        android:label="Gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.calendar_report.CalendarViewReportFragment"
+        android:label="Calendar View"
+        tools:layout="@layout/fragment_calendaerview" />
+    <fragment
+        android:id="@+id/nav_purchased_history"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.purchased_history.PurchasedHistoryFragment"
+        android:label="Purchased History"
+        tools:layout="@layout/fragment_purchased_history" />
+    <fragment
+        android:id="@+id/nav_medical_details"
+        android:name="com.kotlin.dvijaypatient.ui.fragment.medical_details.MedicalDetailsFragment"
+        android:label="Medical Details"
+        tools:layout="@layout/fragment_medical_details" />
+
+    <action
+        android:id="@+id/action_nav_daily_work_to_nav_signature"
+        app:destination="@id/nav_signature"/><action
+        android:id="@+id/action_nav_daily_work_new_to_nav_signature"
+        app:destination="@id/nav_signature"
+         />
+
+    <action
+        android:id="@+id/action_nav_home_to_nav_login"
+        app:destination="@id/nav_login"
+        />
+
+    <action
+        android:id="@+id/action_nav_home_to_nav_compliance"
+        app:destination="@id/nav_set_compliance"
+        />
+    <action
+        android:id="@+id/action_nav_home_to_nav_pill_reminder"
+        app:destination="@id/nav_set_pill_report"
+        />
+
+    <action
+        android:id="@+id/action_nav_home_to_nav_gallery"
+        app:destination="@id/nav_set_gallery"
+        />
+    <action
+        android:id="@+id/action_nav_home_to_nav_purchased_history"
+        app:destination="@id/nav_purchased_history"
+        />
+    <action
+        android:id="@+id/action_nav_home_to_nav_calendar"
+        app:destination="@id/nav_calendar"
+        />
+    <action
+        android:id="@+id/action_nav_home_to_nav_medical_details"
+        app:destination="@id/nav_medical_details"
+        />
+    <action
+        android:id="@+id/action_nav_home_to_nav_profile"
+        app:destination="@id/nav_profile"
+        />
+    <action
+        android:id="@+id/action_nav_home_to_nav_medicine"
+        app:destination="@id/nav_medicine"
+        />
+    <action
+        android:id="@+id/action_nav_medicine_to_nav_reminder"
+        app:destination="@id/nav_reminder"
+        />
+    <action
+        android:id="@+id/action_nav_medicine_to_nav_reminder_new"
+        app:destination="@id/nav_reminder_new"
+        />
+    <action
+        android:id="@+id/action_nav_reminder_to_nav_set_reminder"
+        app:destination="@id/nav_set_reminder"
+        />
+    <action
+        android:id="@+id/action_nav_login_to_nav_otp"
+        app:destination="@id/nav_otp"
+        />
+    <action
+        android:id="@+id/action_nav_req_details_to_nav_full_screen_image"
+        app:destination="@id/nav_full_screen_image"
+        />
+
+
+</navigation>

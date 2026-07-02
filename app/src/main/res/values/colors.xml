@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#65AF14</color>
+    <color name="colorSecondary">#65AF14</color>
+    <color name="colorAppBackground">#FCFCFC</color>
+
+    <color name="colorPrimaryDark">#65AF14</color>
+    <color name="colorPrimaryLight">#ACDCF8</color>
+    <color name="colorPrimaryLight2">#DEF0FF</color>
+    <color name="colorAccent">#65AF14</color>
+    <color name="colorGreen">#65AF14</color>
+    <color name="colorIcon">#65AF14</color>
+    <color name="colorIcon1">#65AF14</color>
+    <color name="colorListPinLocation">#F53542</color>
+    <color name="float_transparent">#00000000</color>
+    <color name="txt_gray_color">#6c6c6c</color>
+    <color name="color1">#FF6B06</color>
+    <color name="color2">#FFAF10</color>
+    <color name="color11">#849A31</color>
+    <color name="color8">#456304</color>
+    <color name="color3">#81C654</color>
+    <color name="color6">#3E9420</color>
+    <color name="color_light_green">#F6FAF2</color>
+    <color name="color5">#A97C50</color>
+    <color name="color7">#603913</color>
+    <color name="color4">#F23900</color>
+    <color name="color10">#BB2913</color>
+    <color name="selectedGreen">#53B175</color>
+    <color name="color14">#464A43</color>
+    <color name="color15">#424242</color>
+    <color name="color16">#E2E2E2</color>
+    <color name="color_grey_txt">#7C7C7C</color>
+
+    <color name="black">#000000</color>
+    <color name="balck_shade">#383838</color>
+    <color name="title_black">#4C4F4D</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--toast background colors-->
+    <color name="defaultTextColor">#FFFFFF</color>
+    <color name="errorColor">#D50000</color>
+    <color name="category_color">#6B117A</color>
+    <color name="infoColor">#3F51B5</color>
+    <color name="successColor">#00CE22</color>
+    <color name="warningColor">#FFA900</color>
+    <color name="normalColor">#353A3E</color>
+    <color name="colorOrange">#F16531</color>
+    <color name="quantum_grey500">#9e9e9e</color>
+    <color name="colorOrangeLight">#9CF1A431</color>
+    <color name="lightGreen">#8C9C78</color>
+
+    <color name="colorGreenButton">#009542</color>
+    <color name="colorDefaultTextView">#808080</color>
+    <color name="size_background_color">#F7F7FC</color>
+
+    <!--login fragment colors-->
+    <color name="clr_fast_and_fresh_text">#456304</color>
+    <color name="colorBlack1">#030303</color>
+
+
+    <!--Verify OTP fragment colors-->
+    <color name="clr_enter_otp">#181725</color>
+    <color name="clr_verify_otp_text">#FFF9FF</color>
+    <color name="clr_custom_edit_text_otp">#E2E2E2</color>
+    <color name="color_action_bar">#E5E5E5</color>
+    <color name="colorGrey">#999999</color>
+    <color name="color_transperent">#0000ffff</color>
+    <color name="colorLightGrey">#D5D5D5</color>
+    <!-- Home Fragment color-->
+    <color name="green_txt_color">#456304</color>
+    <color name="bg_offer_color">#FAA422</color>
+    <color name="blue_txt_color">#575574</color>
+    <color name="dark_blue_color">#012F59</color>
+    <color name="lightBlack">#3E423F</color>
+    <color name="dark_green_color">#235614</color>
+    <color name="cart_green_color">#456304</color>
+    <color name="light_green_color">#86C11F</color>
+
+
+    <!--Addresses fragment-->
+    <color name="clr_check_availabilty_bg">#EFF7E2</color>
+
+    <!--Order View fragment-->
+    <color name="color_order_date_and_time">#5B5B5B</color>
+    <color name="color_order_view_username">#272727</color>
+    <color name="color_horizontal_line">#B3B3B3</color>
+    <color name="color_horizontal_line1">#ECEBEB</color>
+    <color name="color_rv_basket_price">#787878</color>
+    <color name="color_discount_text">#4C4C4C</color>
+    <color name="color_invoice_btn">#18A0FB</color>
+    <color name="color_track_order">#626A55</color>
+    <color name="color_cancel_order">#D43A18</color>
+    <color name="color_cancel_bg">#FFDCD4</color>
+
+    <!--ProductOld detail-->
+    <color name="color_star_rating_unselected">#8D8D8D</color>
+    <color name="color_subscription_plan">#F9FFEF</color>"
+    <color name="color_minus_button">#CECECE</color>"
+    <color name="orange_fill_color">#FFF8F3</color>"
+    <color name="orange_border_color">#FFBA94</color>"
+    <color name="orange_border_color1">#FBF4F0</color>"
+    <color name="brand_tag_color">#FAA322</color>"
+
+    <!--basket page-->
+    <color name="color_price">#737373</color>
+    <color name="drawer_selected_bg_color">#F2F2F2</color>
+    <color name="color_basket_content_weight">#9D9D9D</color>
+    <color name="basket_color_honey_dew">#E5F4EA</color>
+    <color name="basket_color_old_lace">#FEF2E4</color>
+
+    <!--Explore screen colors-->
+    <color name="exp_card_color1">#FFF6EE</color>
+    <color name="exp_border1">#FDDEBE</color>
+    <color name="exp_card_color2">#FBFFED</color>
+    <color name="exp_border2">#E5F2CF</color>
+    <color name="exp_card_color3">#FFF6EE</color>
+    <color name="exp_border3">#F9E9D9</color>
+
+    <!--My orders-->
+    <color name="color_total_amount">#6F6F6F</color>
+    <color name="color_in_process">#E7BC4E</color>
+    <color name="color_delivered">#456304</color>
+    <color name="color_confirmed">#2781A8</color>
+    <color name="color_cancelled">#A31E00</color>
+    <color name="color_order_pending">#FF5C00</color>
+
+    <!--Address-->
+    <color name="color_type_of_address">#5E5E5E</color>
+    <color name="color_type_of_address_bg">#CCCCCC</color>
+    <color name="color_default_address">#4A4A4A</color>
+    <color name="about_txt_color">#4D4D4D</color>
+    <color name="ticket_color">#E3FFB1</color>
+
+    <!--help center-->
+    <color name="color_pending">#FF3636</color>
+    <color name="color_ongoing">#FF8F27</color>
+    <!--    Filter screen color-->
+    <color name="filter_line_color">#D1D1D1</color>
+
+    <!--track order-->
+    <color name="color_vertical_line">#C4C4C4</color>
+
+
+
+    <!--Order Summary-->
+    <color name="color_coupon_code_et">#524F4F</color>
+    <color name="color_wallet_balance">#A1A1A1</color>
+
+    <!--wallet and transactions-->
+    <color name="color_spinner">#989898</color>
+
+    <!--settings-->
+    <color name="color_inactive_switch">#BD444F</color>
+    <color name="color_setting_description">#525252</color>
+    <color name="color_setting_horizontal_line">#D2D2D2</color>
+
+    <!--Coupon row background colors-->
+    <color name="pink_top_color">#FFFFC7BB</color>
+    <color name="light_red_color">#FBF4F2</color>
+    <color name="pink_bottom_color">#FFFEA996</color>
+    <color name="green_top_color">#FFE3FFB1</color>
+    <color name="green_bottom_color">#FFCFFA73</color>
+    <color name="blue_top_color">#C8EEFE</color>
+    <color name="blue_bottom_color">#A3D2FE</color>
+    <color name="red_text_color">#F3603F</color>
+    <color name="refer_text_color">#FF6800</color>
+    <color name="light_green_txt_color">#71AA10</color>
+
+    <!--Weight item colors-->
+    <color name="weight_border_color">#69BB86</color>
+    <color name="weight_fill_color">#EAFFF1</color>
+
+    <!--Store location screen colors-->
+    <color name="light_black_txt">#1A1A1A</color>
+    <color name="txt_dark_green">#5E8D0B</color>
+    <color name="store_txt_color">#191919</color>
+    <color name="color_blue">#3077CF</color>
+    <color name="color__darkblue">#00008B</color>
+
+    <!--Gallery screen colors-->
+    <color name="bg_grey">#EFEFEF</color>
+
+    <!--FAQ'S Screen colors-->
+    <color name="color_off_white">#FCFFF8</color>
+    <color name="color_off_white_border">#A6A6A6</color>
+    <color name="bold_txt_color">#3F3F3F</color>
+
+    <!--Dialog colors-->
+    <color name="dialog_bg_color">#F2F3F2</color>
+    <color name="filter_bg_color">#F2F3F2</color>
+
+    <!--My Basket Subscription color-->
+    <color name="color_border_light">#E2E2E2</color>
+    <color name="color_dark_divider">#C9C9C9</color>
+    <color name="seasonal_border_color">#EEEEEE</color>
+
+    <!--upload photo dialog colors-->
+    <color name="colorGreenTransparent">#A686C11F</color>
+    <color name="colorGreyTransparent">#22FFFFFF</color>
+    <color name="colorWhiteTransparent">#00FFFFFF</color>
+
+    <!--ucrop parameters-->
+    <color name="ucrop_color_toolbar">@color/colorPrimary</color>
+    <color name="ucrop_color_statusbar">@color/colorPrimary</color>
+    <color name="ucrop_color_toolbar_widget">@color/white</color>
+    <color name="ucrop_color_widget_text">@color/white</color>
+    <color name="ucrop_color_widget_rotate_mid_line">#CECECE</color>
+    <color name="ucrop_color_widget_background">@color/colorPrimary</color>
+    <color name="ucrop_color_active_controls_color">@color/infoColor</color>
+    <color name="ucrop_color_widget_active">@color/infoColor</color>
+    <color name="ucrop_color_inactive_controls_color">@color/white</color>
+    <color name="colorPlatinum">#E5E4E2</color>
+    <color name="bg_color_congrats">#8086C11F</color>
+    <color name="subscription_card_bg">#F9FFEF</color>
+    <color name="subscription_card_red_bg">#FFF3EF</color>
+    <color name="bg_color_sorry">#33F3603F</color>
+    <color name="txt_color_sorry">#CC251717</color>
+
+
+    <color name="darkred">#89082a</color>
+    <color name="colorButton">#054E34</color>
+    <color name="colorGray">#b7b7b7</color>
+    <color name="colorListItemBackground">#E5FFCC</color>
+
+    <color name="tabColor">@color/colorPrimary</color>
+    <color name="tabTextColor">#DFDB82</color>
+    <color name="navDrawerBackgroundColor">#771E22</color>
+    <color name="colorSeparator">#d3d3d3</color>
+    <!-- <color name="colorBlue">#C0C01F</color>-->
+
+    <color name="colorDeselectedRoundedTab">#B3F57D37</color>
+    <color name="colorSelectedRoundedTab">#B3F57D37</color>
+
+    <color name="colorDeselectedTab">#DFE0E1</color>
+    <color name="colorSelectedTab">#C2C3C4</color>
+
+    <color name="appTextcolor">#0d54a1</color>
+    <color name="red">#f9d91212</color>
+    <color name="colorSmokeWhite">#F0F0F0</color>
+    <color name="colorHomeWebviewBackground">#FBFCFE</color>
+    <color name="searchDialogResultColor">#123456</color>
+    <color name="txt_black_light">#4d4c4c</color>
+    <color name="colorMenuSeparator">#D6D7D9</color>
+    <color name="error_color">#E7492E</color>
+    <color name="textColorGray">#8F8D8D</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSuccess">#07794E</color>
+    <color name="colorWarning">#FFCC00</color>
+    <color name="colorNeutral">#434343</color>
+    <color name="colorError">#CC0000</color>
+    <color name="colorTextPrimary">#212121</color>
+
+    <color name="colorToolbar">#76322B</color>
+
+    <color name="teal_primary">#1F8AA3</color>
+    <color name="teal_dark">#197C91</color>
+    <color name="teal_mid">#238EA7</color>
+
+    <color name="bg">#F3F6F9</color>
+
+
+    <color name="text_dark">#2C2C2C</color>
+    <color name="text_light">#7A7A7A</color>
+
+    <color name="card_blue">#2C93AB</color>
+    <color name="card_light_blue">#6FC3C9</color>
+    <color name="danger_bg">#FFECEC</color>
+    <color name="danger_text">#FF6B6B</color>
+
+</resources>

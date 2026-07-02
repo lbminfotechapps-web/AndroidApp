@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Pooja jadhav at 6/14/24, 5:47 PM.
+  -->
+
+<resources>
+    <declare-styleable name="Alerter">
+        <attr name="alertStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="Alert">
+        <attr name="alertIcon" format="reference" />
+        <attr name="alertBackgroundColor" format="color" />
+        <attr name="alertTitle" format="string" />
+        <attr name="alertText" format="string" />
+    </declare-styleable>
+    <declare-styleable name="ClassMyTextView">
+        <attr name="fontName" format="string" />
+    </declare-styleable>
+    <!--custom font to views-->
+    <attr name="setCustomFont" format="string" />
+    <declare-styleable name="CustomTextView">
+        <attr name="setCustomFont" />
+    </declare-styleable>
+    <declare-styleable name="CustomButton">
+        <attr name="setCustomFont" />
+    </declare-styleable>
+    <declare-styleable name="CustomEditText">
+        <attr name="setCustomFont" />
+    </declare-styleable>
+    <declare-styleable name="CustomCheckBox">
+        <attr name="setCustomFont" />
+    </declare-styleable>
+    <declare-styleable name="CustomCheckedTextView">
+        <attr name="setCustomFont" />
+    </declare-styleable>
+
+    <!--dotted progress bar-->
+    <declare-styleable name="DotProgressBar">
+        <attr name="color" format="color" />
+        <attr name="count" format="integer" />
+        <attr name="timeout" format="integer" />
+    </declare-styleable>
+
+    <!-- Expand Icon View -->
+    <declare-styleable name="ExpandIconView">
+        <attr name="eiv_roundedCorners" format="boolean" />
+        <attr name="eiv_switchColor" format="boolean" />
+        <attr name="eiv_color" format="color" />
+        <attr name="eiv_colorMore" format="color" />
+        <attr name="eiv_colorLess" format="color" />
+        <attr name="eiv_colorIntermediate" format="color" />
+        <attr name="eiv_animationDuration" format="integer" />
+        <attr name="eiv_padding" format="dimension" />
+    </declare-styleable>
+
+    <!--PinView FOR otp screen-->
+    <declare-styleable name="PinViewTheme">
+        <attr name="pinViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PinView">
+        <attr name="itemCount" format="integer" />
+        <attr name="itemWidth" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="itemRadius" format="dimension" />
+        <attr name="itemSpacing" format="dimension" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineColor" format="reference|color" />
+        <attr name="viewType" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="line" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="android:cursorVisible" />
+        <attr name="cursorWidth" format="dimension" />
+        <attr name="cursorColor" format="reference|color" />
+        <attr name="android:itemBackground" />
+        <attr name="hideLineWhenFilled" format="boolean" />
+    </declare-styleable>
+
+    <!--For CircleImageView-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+
+</resources>

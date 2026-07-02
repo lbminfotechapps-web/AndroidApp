@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+    <include
+        android:id="@+id/app_bar_home"
+        layout="@layout/app_bar_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:fitsSystemWindows="false"
+        tools:openDrawer="start">
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@drawable/gradient"
+            android:fitsSystemWindows="true"
+            android:scrollbars="none"
+            android:visibility="gone"
+            app:headerLayout="@layout/nav_header_home"
+            app:itemBackground="@drawable/selected_drawer_background"
+            app:itemIconTint="@drawable/drawer_item_color"
+            app:itemTextAppearance="@style/NavigationDrawerStyle"
+            app:itemTextColor="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <include layout="@layout/nav_header_home" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:id="@+id/nav_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="3dp">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_marginStart="15dp"
+                                android:src="@drawable/ic_home"
+                                app:tint="@color/colorWhite" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:gravity="center_vertical"
+                                android:padding="8dp"
+                                android:text="HOME"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <View
+                            android:id="@+id/view_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/white" />
+
+
+                        <TableRow
+                            android:id="@+id/nav_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="3dp">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_marginStart="15dp"
+                                android:src="@drawable/profile"
+                                app:tint="@color/colorWhite" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:gravity="center_vertical"
+                                android:padding="8dp"
+                                android:text="Profile"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <View
+                            android:id="@+id/view_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/white" />
+
+
+                        <TableRow
+                            android:id="@+id/nav_medicine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="3dp">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_marginStart="15dp"
+                                android:src="@drawable/medicine"
+                                app:tint="@color/colorWhite" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:gravity="center_vertical"
+                                android:padding="8dp"
+                                android:text="Medicine Wise Schedule"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+
+                        <View
+                            android:id="@+id/view_req"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/white" />
+
+
+                        <TableRow
+                            android:id="@+id/tr_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="3dp">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="15dp"
+                                android:src="@drawable/logout"
+                                app:tint="@color/colorWhite" />
+
+                            <TextView
+                                android:id="@+id/nav_login"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:gravity="center_vertical"
+                                android:padding="8dp"
+                                android:text="LOGIN"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

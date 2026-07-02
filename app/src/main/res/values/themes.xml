@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base theme -->
+    <style name="Base.Theme.ShivShakti" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+
+    <!-- Main app theme -->
+    <style name="Theme.ShivShakti" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorGray</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/color__darkblue</item> <!-- Dark blue -->
+        <item name="android:windowLightStatusBar">false</item> <!-- Light icons -->
+
+        <item name="textInputStyle">@style/Widget.Material3.TextInputLayout.OutlinedBox</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="Theme.MyApp.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="windowSplashScreenAnimationDuration">200</item>
+
+        <item name="android:statusBarColor">@color/color__darkblue</item> <!-- Blue status bar during splash -->
+        <item name="android:windowLightStatusBar">false</item> <!-- Light icons -->
+
+        <!-- Theme to apply after splash -->
+        <item name="postSplashScreenTheme">@style/Theme.ShivShakti</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+
+</resources>

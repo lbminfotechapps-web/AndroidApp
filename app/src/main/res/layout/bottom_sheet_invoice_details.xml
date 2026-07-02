@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <!-- Handle -->
+    <View
+        android:layout_width="45dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_gray_bar" />
+
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/circle_bg"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_menu_agenda" />
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:text="Invoice Details"
+            android:textColor="#111111"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="8dp"
+            android:src="@drawable/closes" />
+
+
+    </LinearLayout>
+
+
+    <!-- Product Card -->
+
+    <!-- Product List Card -->
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+
+        app:cardCornerRadius="16dp"
+        app:cardElevation="3dp">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Product Information"
+
+                android:textColor="#777777"
+
+                android:textStyle="bold"
+
+                android:textSize="12sp"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/rvProducts"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Details -->
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="14dp"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="3dp">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:padding="16dp">
+
+
+            <!-- Qty -->
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+
+                <ImageView
+
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:src="@android:drawable/ic_input_add" />
+
+
+                <TextView
+
+                    android:id="@+id/tvQty"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="12dp"
+
+                    android:text="Quantity : 10"
+
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <!-- Rate -->
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+
+                android:gravity="center_vertical">
+
+
+                <ImageView
+
+                    android:layout_width="25dp"
+
+                    android:layout_height="25dp"
+
+                    android:src="@android:drawable/ic_menu_info_details" />
+
+
+                <TextView
+
+                    android:id="@+id/tvRate"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="12dp"
+
+                    android:text="Rate : ₹100"
+
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <!-- Amount -->
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+
+                android:background="#E8F5E9"
+
+                android:padding="12dp">
+
+
+                <TextView
+
+                    android:id="@+id/tvAmount"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="Total Amount : ₹1000"
+
+                    android:textColor="#2E7D32"
+
+                    android:textSize="18sp"
+
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

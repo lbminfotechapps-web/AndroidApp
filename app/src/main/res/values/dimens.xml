@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Pooja Jadhav at 26/05/25, 5:47 PM.
+  -->
+
+<resources>
+    <!--font sizes-->
+    <dimen name="_10sp">10dp</dimen>
+    <dimen name="_9sp">9dp</dimen>
+    <dimen name="_3sp">3dp</dimen>
+    <dimen name="_5sp">5dp</dimen>
+    <dimen name="_8sp">8dp</dimen>
+
+
+    <dimen name="_8sdp">10dp</dimen>
+    <dimen name="_12sp">12dp</dimen>
+    <dimen name="_12sdp">12dp</dimen>
+    <dimen name="_11sp">11dp</dimen>
+    <dimen name="_14sp">14dp</dimen>
+    <dimen name="_13sp">13dp</dimen>
+    <dimen name="_15sp">15dp</dimen>
+    <dimen name="_16sp">16dp</dimen>
+    <dimen name="_17sp">17dp</dimen>
+    <dimen name="_19sp">19dp</dimen>
+    <dimen name="_18sp">18dp</dimen>
+    <dimen name="_20sp">20dp</dimen>
+    <dimen name="_20sdp">20dp</dimen>
+    <dimen name="dimen_68">68dp</dimen>
+    <dimen name="dimen_48">48dp</dimen>
+    <dimen name="_22sp">22dp</dimen>
+    <dimen name="_24sp">24dp</dimen>
+    <dimen name="_50sdp">50dp</dimen>
+    <dimen name="_55sdp">55dp</dimen>
+    <dimen name="dimen_90">90dp</dimen>
+    <dimen name="dimen_150">150dp</dimen>
+    <dimen name="webview_text_size">6dp</dimen>
+    <!--Alerter-->
+    <dimen name="alerter_padding_small">4dp</dimen>
+    <dimen name="alerter_padding_half">8dp</dimen>
+    <dimen name="alerter_alert_padding">28dp</dimen>
+    <dimen name="alerter_alert_negative_margin_top">-24dp</dimen>
+    <dimen name="alerter_activity_horizontal_margin">18dp</dimen>
+    <dimen name="alerter_alert_min_height">64dp</dimen>
+    <dimen name="alerter_alert_max_height">84dp</dimen>
+    <dimen name="alerter_alert_icn_size">38dp</dimen>
+    <dimen name="_28sp">28sp</dimen>
+    <!--PinView-->
+    <dimen name="pv_pin_view_item_size">48dp</dimen>
+    <dimen name="pv_pin_view_item_radius">5dp</dimen>
+    <dimen name="pv_pin_view_item_spacing">5dp</dimen>
+    <dimen name="pv_pin_view_item_line_width">2dp</dimen>
+    <dimen name="pv_pin_view_cursor_width">2dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="text_input_margin_top">6dp</dimen>
+    <dimen name="edit_text_padding_start">8dp</dimen>
+    <dimen name="edit_text_padding_end">8dp</dimen>
+    <dimen name="edit_text_padding_top">10dp</dimen>
+    <dimen name="edit_text_padding_bottom">8dp</dimen>
+
+    <dimen name="dimen_10">10dp</dimen>
+
+    <dimen name="dimen_28">28dp</dimen>
+
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+
+    <dimen name="button_height">55dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_13">13dp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+
+    <dimen name="dimen_5">5dp</dimen>
+
+    <dimen name="dimen_52">52dp</dimen>
+
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_55">55dp</dimen>
+
+    <dimen name="divider_width">1dp</dimen>
+
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_18">18dp</dimen>
+    <dimen name="dimen_22">22dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_elevation">12dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="normal_text_size">15sp</dimen>
+    <dimen name="dimen_200">200dp</dimen>
+    <dimen name="dimen_250">250dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_130">130dp</dimen>
+    <dimen name="dimen_180">180dp</dimen>
+    <dimen name="dimen_6">6dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="dimen_72">72dp</dimen>
+    <dimen name="dimen_74">74dp</dimen>
+
+</resources>

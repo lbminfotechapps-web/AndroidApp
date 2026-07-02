@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_blue">
+
+        <!-- HEADER -->
+
+
+        <!-- MAIN CARD -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardElevation="8dp"
+            app:shapeAppearanceOverlay="@style/TopRoundedCard">
+
+
+        <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <!-- TITLE -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="What Would you like to manage?"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#2C5E8E"
+                        android:layout_marginBottom="16dp"/>
+
+                    <!-- PILL REMINDER -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_pill_reminder_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_marginBottom="14dp"
+                        app:cardCornerRadius="22dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:background="#BBE2ED"
+                            android:padding="16dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pill Reminder"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#000"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Upcoming Doses"
+                                    android:textSize="13sp"
+                                    android:textColor="#555"
+                                    android:layout_marginTop="4dp"/>
+
+                                <Button
+                                    android:layout_width="90dp"
+                                    android:layout_height="30dp"
+                                    android:text="View All"
+                                    android:textSize="12sp"
+                                    android:visibility="gone"
+                                    android:textColor="@android:color/white"
+                                    android:background="@drawable/btn_bg"
+                                    android:layout_marginTop="10dp"/>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/reminder_icon"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- MEDICINE LIST -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_medicine_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_marginBottom="14dp"
+                        app:cardCornerRadius="22dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:background="#DCCEF6"
+                            android:padding="16dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Medicine List"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="View Your Medicine"
+                                    android:textSize="13sp"
+                                    android:layout_marginTop="4dp"/>
+
+                                <Button
+                                    android:layout_width="90dp"
+                                    android:layout_height="34dp"
+                                    android:text="View All"
+                                    android:textSize="12sp"
+                                    android:visibility="gone"
+                                    android:textColor="@android:color/white"
+                                    android:background="@drawable/common_google_signin_btn_icon_dark"
+                                    android:layout_marginTop="8dp"/>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:src="@drawable/medicine_icon_new"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- COMPLIANCE -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_marginBottom="12dp"
+                        app:cardCornerRadius="18dp"
+                        android:id="@+id/cvComplianceReport"
+                        app:cardBackgroundColor="#F1F1F1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="16dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Compliance Report"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="View Compliance Report"
+                                    android:textSize="13sp"
+                                    android:textColor="#666"/>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:src="@drawable/report"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- MISSED PILLS -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvMissingpillsReport"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        app:cardCornerRadius="18dp"
+                        android:layout_marginBottom="12dp"
+                        app:cardBackgroundColor="#F1F1F1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="16dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Missed Pills"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#E53935"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pills Missed"
+                                    android:textSize="13sp"/>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:src="@drawable/medicine"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- INVOICE HISTORY -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvInvoiceHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_marginBottom="12dp"
+                        app:cardCornerRadius="18dp"
+                        app:cardBackgroundColor="#E8F5E9">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="16dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Purchased History"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#2E7D32"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="View previous purchased"
+                                    android:textSize="13sp"
+                                    android:textColor="#666"
+                                    android:layout_marginTop="4dp"/>
+
+
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:src="@drawable/ic_invoice"/>
+
+
+                        </LinearLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvCalendar"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        app:cardCornerRadius="18dp"
+                        app:cardBackgroundColor="#F1F1F1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="16dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Datewise Schedule"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/color_blue"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="View Your Datewise Schedule"
+                                    android:textSize="13sp"/>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/calendar"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                    <!-- MEDICAL DETAILS -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvMedicalDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_marginTop="@dimen/_10sp"
+                        app:cardCornerRadius="18dp"
+                        app:cardBackgroundColor="#FFF3E0">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="16dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Medical Details"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#E65100"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="View Patient Medical Information"
+                                    android:textSize="13sp"
+                                    android:textColor="#666"
+                                    android:layout_marginTop="4dp"/>
+
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/medical"/>
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvGallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="18dp"
+                        app:cardBackgroundColor="#F1F1F1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="16dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gallery"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/color_blue"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="See Videos and Documents"
+                                    android:textSize="13sp"/>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/gallery_new"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</layout>

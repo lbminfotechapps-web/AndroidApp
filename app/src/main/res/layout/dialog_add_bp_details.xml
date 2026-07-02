@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="20dp"
+
+    app:cardCornerRadius="18dp"
+    app:cardElevation="8dp">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="12dp">
+
+
+        <!-- Header -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+
+            <TextView
+
+                android:id="@+id/tvDialogTitle"
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text="Add BP Details"
+
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/black"/>
+
+
+
+            <ImageView
+
+                android:id="@+id/ivClose"
+
+                android:layout_width="35dp"
+
+                android:layout_height="35dp"
+
+                android:padding="6dp"
+
+                android:src="@drawable/closes"/>
+
+
+        </LinearLayout>
+
+
+
+        <!-- BP BOX -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="170dp"
+
+            android:gravity="center"
+
+            android:layout_marginTop="20dp"
+
+            android:orientation="horizontal">
+
+
+            <!-- SYS -->
+
+            <EditText
+
+                android:id="@+id/etSys"
+
+                android:layout_width="80dp"
+
+                android:layout_height="120dp"
+
+                android:gravity="center"
+
+                android:textSize="28sp"
+
+                android:hint="-"
+
+                android:inputType="number"
+
+                android:background="@drawable/bg_bp_box"/>
+
+
+
+            <!-- DIA -->
+
+            <EditText
+
+                android:id="@+id/etDia"
+
+                android:layout_width="80dp"
+
+                android:layout_height="120dp"
+
+                android:gravity="center"
+
+                android:textSize="28sp"
+
+                android:hint="-"
+
+                android:inputType="number"
+
+                android:layout_marginStart="5dp"
+
+                android:background="@drawable/bg_bp_box"/>
+
+
+
+            <!-- PULSE -->
+
+            <EditText
+
+                android:id="@+id/etPulse"
+
+                android:layout_width="80dp"
+
+                android:layout_height="120dp"
+
+                android:gravity="center"
+
+                android:textSize="28sp"
+
+                android:hint="-"
+
+                android:inputType="number"
+
+                android:layout_marginStart="5dp"
+
+                android:background="@drawable/bg_bp_box"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <!-- Labels -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:gravity="center">
+
+
+            <TextView
+
+                android:layout_width="80dp"
+
+                android:layout_height="wrap_content"
+
+                android:text="SYS\nmmHg"
+
+                android:textSize="14sp"
+
+                android:gravity="center"/>
+
+
+            <TextView
+
+                android:layout_width="80dp"
+
+                android:layout_height="wrap_content"
+
+                android:text="DIA\nmmHg"
+
+                android:textSize="14sp"
+
+                android:gravity="center"/>
+
+
+            <TextView
+
+                android:layout_width="80dp"
+
+                android:layout_height="wrap_content"
+
+                android:text="PUL\n/min"
+
+                android:textSize="14sp"
+
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+
+        <!-- Date -->
+
+        <TextView
+
+            android:id="@+id/tvDateTime"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="45dp"
+
+            android:layout_gravity="center"
+
+            android:gravity="center"
+
+            android:text="📅 Today | 10:36 am"
+
+            android:textColor="@color/color_blue"
+
+            android:textStyle="bold"
+
+            android:background="@drawable/bg_date_button"
+
+            android:paddingHorizontal="15dp"
+
+            android:layout_marginTop="20dp"/>
+
+
+
+        <Button
+
+            android:id="@+id/btnSave"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+
+            android:text="Save"
+
+            app:backgroundTint="@color/color_blue"
+
+            android:layout_marginTop="15dp"/>
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

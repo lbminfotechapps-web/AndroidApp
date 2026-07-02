@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <data>
+
+            <variable
+                name="purchasedListViewModel"
+                type="com.kotlin.dvijaypatient.ui.fragment.purchased_history.PurchasedListViewModel" />
+        </data>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_blue"
+        android:orientation="vertical">
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardElevation="8dp"
+            app:shapeAppearanceOverlay="@style/TopRoundedCard">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvReportTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_10sp"
+                    android:text="Purchased History"/>
+
+                <LinearLayout
+
+
+                    android:layout_width="match_parent"
+
+
+                    android:layout_height="wrap_content"
+
+
+                    android:orientation="horizontal"
+
+
+                    android:gravity="center_vertical"
+
+
+                    android:padding="10dp">
+
+
+
+
+
+                    <!-- FROM DATE -->
+
+
+                    <LinearLayout
+
+                        android:id="@+id/layoutFromDate"
+
+                        android:layout_width="0dp"
+
+                        android:layout_height="45dp"
+
+                        android:layout_weight="1"
+
+                        android:gravity="center_vertical"
+
+                        android:paddingHorizontal="10dp"
+
+                        android:background="@drawable/bg_bp_value">
+
+
+
+                        <ImageView
+
+                            android:layout_width="20dp"
+
+                            android:layout_height="20dp"
+
+                            android:src="@drawable/calendar"
+
+                            app:tint="@color/color_blue"/>
+
+
+
+
+                        <TextView
+
+                            android:id="@+id/tvFromDate"
+
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="6dp"
+
+                            android:text="From Date"
+
+                            android:textSize="13sp"
+
+                            android:textColor="#555"/>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <!-- TO DATE -->
+
+
+                    <LinearLayout
+
+
+                        android:id="@+id/layoutToDate"
+
+
+                        android:layout_width="0dp"
+
+
+                        android:layout_height="45dp"
+
+
+                        android:layout_weight="1"
+
+
+                        android:layout_marginStart="8dp"
+
+
+                        android:gravity="center_vertical"
+
+
+                        android:paddingHorizontal="10dp"
+
+
+                        android:background="@drawable/bg_bp_value">
+
+
+
+                        <ImageView
+
+
+                            android:layout_width="20dp"
+
+
+                            android:layout_height="20dp"
+
+
+                            android:src="@drawable/calendar"
+
+
+                            app:tint="@color/color_blue"/>
+
+
+
+                        <TextView
+
+
+                            android:id="@+id/tvToDate"
+
+
+                            android:layout_width="wrap_content"
+
+
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginStart="6dp"
+
+
+                            android:text="To Date"
+
+
+                            android:textSize="13sp"
+
+
+                            android:textColor="#555"/>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+                    <!-- SEARCH -->
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMedicine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sp" />
+
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</layout>
+
