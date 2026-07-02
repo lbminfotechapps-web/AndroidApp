@@ -54,7 +54,6 @@ import com.kotlin.dvijaypatient.ui.fragment.set_reminder.SetReminderFragment
 import com.kotlin.dvijaypatient.ui.fragment.set_reminder.TimeDialog
 import com.kotlin.dvijaypatient.ui.fragment.set_reminder.WeekDays
 import com.kotlin.dvijaypatient.utils.ClassConnectionDetector
-import com.kotlin.dvijaypatient.utils.MyLocationHelper
 import okhttp3.MultipartBody
 import retrofit2.Call
 import retrofit2.Callback

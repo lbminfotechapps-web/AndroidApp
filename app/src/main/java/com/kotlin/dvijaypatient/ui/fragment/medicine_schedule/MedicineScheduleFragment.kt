@@ -43,7 +43,6 @@ import com.kotlin.dvijaypatient.model.MedicineModel
 
 import com.kotlin.dvijaypatient.ui.fragment.BaseFragment
 import com.kotlin.dvijaypatient.utils.ClassConnectionDetector
-import com.kotlin.dvijaypatient.utils.MyLocationHelper
 import okhttp3.MultipartBody
 
 import java.io.File

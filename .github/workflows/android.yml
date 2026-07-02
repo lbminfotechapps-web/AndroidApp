@@ -8,11 +8,14 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Source
+        uses: actions/checkout@v4
 
       - name: Setup JDK 17
         uses: actions/setup-java@v4
@@ -27,17 +30,32 @@ jobs:
       - name: Grant execute permission
         run: chmod +x gradlew
 
-      - name: Run Lint
-        run: ./gradlew lint
+      # Static code analysis
+      - name: Run Android Lint
+        run: ./gradlew lintDebug
 
+      # Unit Tests
       - name: Run Unit Tests
-        run: ./gradlew test
+        run: ./gradlew testDebugUnitTest
 
+      # Build APK
       - name: Build Debug APK
         run: ./gradlew assembleDebug
 
-      - name: Upload APK
+      # Upload APK
+      - name: Upload Debug APK
         uses: actions/upload-artifact@v4
         with:
           name: Debug-APK
           path: app/build/outputs/apk/debug/app-debug.apk
+
+      # Upload reports even if the build fails
+      - name: Upload Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Reports
+          path: |
+            app/build/reports/**
+            app/build/test-results/**
+            app/build/intermediates/lint_intermediate_text_report/**
